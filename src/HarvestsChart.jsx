@@ -6,7 +6,7 @@ function HarvestsChart() {
   const [quantity, setQuantity] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/quantity')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/quantity')
       .then(res => {
         console.log(res.data);
         setQuantity(res.data);
