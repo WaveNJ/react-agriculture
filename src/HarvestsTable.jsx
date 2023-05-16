@@ -5,7 +5,7 @@ function HarvestsTable() {
   const [harvests, setHarvests] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/Harvests')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Harvests')
       .then(res => {
         console.log(res.data);
         setHarvests(res.data);
