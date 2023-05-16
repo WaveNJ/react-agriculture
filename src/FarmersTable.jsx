@@ -5,7 +5,7 @@ function FarmersTable() {
   const [farmers, setFarmers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/Farmers')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Farmers')
       .then(res => {
         console.log(res.data);
         setFarmers(res.data);
