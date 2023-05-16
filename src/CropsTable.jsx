@@ -5,7 +5,7 @@ function CropsTable() {
   const [crops, setCrops] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/Crops')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Crops')
       .then(res => {
         console.log(res.data);
         setCrops(res.data);
