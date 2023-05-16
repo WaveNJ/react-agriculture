@@ -10,7 +10,7 @@ import HarvestsChart from './HarvestsChart';
 function App() {
   const [quantity, setQuantity] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:5000/quantity')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/quantity')
       .then(res => {
         console.log(res.data);
         setQuantity(res.data);
@@ -22,7 +22,7 @@ function App() {
 
   const [Crops, setCrops] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:5000/Crops')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Crops')
       .then(res => {
         console.log(res.data)
         setCrops(res.data)
@@ -31,7 +31,7 @@ function App() {
 
   const [Harvests, setHarvests] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:5000/Harvests')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Harvests')
       .then(res => {
         console.log(res.data)
         setHarvests(res.data)
@@ -40,7 +40,7 @@ function App() {
 
   const [Farmers, setFarmers] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:5000/Farmers')
+    axios.get('https://drab-ruby-frog-coat.cyclic.app/Farmers')
       .then(res => {
         console.log(res.data)
         setFarmers(res.data)
